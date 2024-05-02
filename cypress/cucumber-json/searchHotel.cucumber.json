@@ -23,7 +23,7 @@
             "name": "user visit hotel page",
             "result": {
               "status": "passed",
-              "duration": 3622000000
+              "duration": 5763000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "user enter valid search criteria",
             "result": {
               "status": "passed",
-              "duration": 1920000000
+              "duration": 2798000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "a list of hotels is shown",
             "result": {
               "status": "passed",
-              "duration": 10830000000
+              "duration": 9390000000
             }
           }
         ]
