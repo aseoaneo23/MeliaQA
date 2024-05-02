@@ -13,3 +13,36 @@ export const searchPage = {
 }
 
 export let cities = ["Madrid", "Barcelona", "A Coruña", "Granja", ""]
+
+export const userDataPage  = {
+    EMAIL_INPUT : "//input[contains(@name,'email')]",
+    NACIONALITY_SELECT : "//select[contains(@name,'nationality')]",
+    NAME_INPUT : "//input[@name='name']",
+    AP1_INPUT : "//input[contains(@name,'surname1')]",
+    AP2_INPUT : "//input[contains(@name,'surname2')]",
+    NIF_INPUT : "//input[contains(@name,'nif')]",
+    COUNTRY_SELECT : "//select[contains(@name,'country')]",
+    POPULATION_INPUT : "//input[contains(@name,'city')]",
+    ZIPCODE_INPUT : "//input[contains(@name,'postcode')]",
+    PROVINCE_SELECT : "//input[contains(@name,'postcode')]",
+    ADDRESS_INPUT : "//input[contains(@name,'address')]",
+    TELFPREFIX_SELECT : "//span[contains(@class,'select-wrapper___2t9AO')]",
+    TELF_INPUT : "//input[contains(@name,'phoneNumber')]",
+    CHECKBOX_REWARDS : "//label[contains(@for,'rewards')]",
+    CHECKBOX_CONDITIONS : "//label[contains(@for,'checkboxConditions')]",
+    SUBMIT_BUTTON : "//button[@class='c-button___2XZmD'][contains(.,'Continuar')]",
+    ERROR_INPUT : "//p[@class='error___3B9Tw'][contains(., 'errortext')]",
+    USERDATA_URL : "/checkout/step-3"
+}
+
+export const paymentDataPage = {
+    PAYPAL_TAB :  "//li[@class='list-metodos-pago'][contains(.,'Paypal')]",
+    CARDNAME_INPUT : "//input[contains(@name,'cardholder')]",
+    CARD_INPUT : "//input[@id='pan']",
+    MONTHDATE_SELECT : "//select[contains(@name,'month')]",
+    YEARDATE_SELECT : "//select[contains(@name,'year')]",
+    CVV_INPUT : "//input[contains(@name,'cvv')]",
+    SUBMIT_BUTTON : "//button[@type='button'][contains(.,'Confirmar reserva')]",
+    PAYMENTDATA_URL : "https://www.meliapayments.com/payments/form"
+
+}
