@@ -9,5 +9,7 @@ module.exports = defineConfig({
     specPattern: "cypress/features/**/*.feature",
     baseUrl: "https://www.google.com/",
     chromeWebSecurity: false,
+    viewportWidth: 1920,
+    viewportHeight: 1080,
   },
 });
