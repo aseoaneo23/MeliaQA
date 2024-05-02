@@ -38,6 +38,19 @@ class homePage {
     hotelList () {
         this.elements.hotelFound().should('be.visible')
     }
+
+    emptyCity (city) {
+        this.elements.labelSearch().should('be.visible').click()
+        if (city !== "") {
+            this.elements.inputSearch().clear().type(city).then(() => {
+                this.elements.firstOptionSearch().should('be.visible').click()
+            })
+        }
+    }  
+    
+    emptyCityError () {
+        this.elements.errorCityEmpty().contains('Introduce un hotel')
+    }
 }
 
 module.exports = new homePage(); 

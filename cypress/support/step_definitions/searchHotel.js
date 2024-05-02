@@ -20,3 +20,12 @@ When('user enter valid search criteria', () => {
 Then('a list of hotels is shown', () => {
     homePage.hotelList()
 })
+
+When('user does not enter search criteria', () => {
+    homePage.emptyCity(cities[4])
+    homePage.clickSearchButton()
+})
+
+Then('error message is displayed', () => {
+    homePage.emptyCityError()
+}) 
