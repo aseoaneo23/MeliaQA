@@ -9,7 +9,8 @@ export const searchPage = {
     BUTTON_SEARCH : '.submit___3burc > .c-button___2XZmD',
     HOTEL_FOUND : ':nth-child(1) > .c-result-cover___3mtgg > .media-wrapper___1oer_ > .c-swiper___1RTdv > .slides___32sgt > .slides-wrapper___2R5Sk > .active___2ZI2Y > .overlay___2cmrI',
     ERROR_CITY_EMPTY : '.content___10xxT',
-    ERROR_CITY_INVALID : '.text___O5noN'
+    ERROR_CITY_INVALID : '.text___O5noN',
+    ERROR_DATE_EMPTY : '.c-notification___23xB1'
 }
 
 export let cities = ["Madrid", "Barcelona", "A Coruña", "Granja", ""]

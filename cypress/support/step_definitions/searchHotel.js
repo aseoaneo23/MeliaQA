@@ -39,3 +39,12 @@ When ('user enter invalid city', () => {
 Then('second error message is displayed', () => {
     homePage.invalidCityError()
 })
+
+When('user enter whitout date', () => {
+    homePage.selectCity(cities[0])
+    homePage.clickSearchButton()
+})
+
+Then('third error message is displayed', () => {
+    homePage.emptyDateError()
+})

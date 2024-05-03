@@ -12,7 +12,8 @@ class homePage {
         buttonSearch : () => cy.get(searchPage.BUTTON_SEARCH),
         hotelFound : () => cy.get(searchPage.HOTEL_FOUND),
         errorCityEmpty : () => cy.get(searchPage.ERROR_CITY_EMPTY),
-        errorCityInvalid : () => cy.get(searchPage.ERROR_CITY_INVALID)
+        errorCityInvalid : () => cy.get(searchPage.ERROR_CITY_INVALID),
+        errorDateEmpty : () => cy.get(searchPage.ERROR_DATE_EMPTY)
     }
 
     acceptCookies() {
@@ -59,7 +60,11 @@ class homePage {
     invalidCityError () {
         this.elements.errorCityInvalid().should('be.visible').contains('Lo sentimos, nuestro sistema no reconoce este nombre')
     }
+
+    emptyDateError () {
+        this.elements.errorDateEmpty().should('be.visible').contains('Elige fechas de entrada y salida para iniciar la búsqueda')
+    }
 }
 
 
-module.exports = new homePage(); 
+module.exports = new homePage();

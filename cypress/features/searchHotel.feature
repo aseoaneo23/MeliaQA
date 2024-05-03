@@ -16,3 +16,7 @@ Feature: Hotel search
     Scenario: Failed search for invalid city
       When user enter invalid city
       Then second error message is displayed
+
+    Scenario: Failed search due to not entering date
+      When user enter whitout date
+      Then third error message is displayed
