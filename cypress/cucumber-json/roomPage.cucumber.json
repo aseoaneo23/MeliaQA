@@ -23,18 +23,17 @@
             "name": "an user on the room selection page with at least one result",
             "result": {
               "status": "passed",
-              "duration": 8920000000
+              "duration": 5065000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 9,
-            "name": "an user that sets Melia Rewards in \"<setActive>\"",
+            "name": "an user that sets Melia Rewards in \"true\"",
             "result": {
-              "status": "failed",
-              "duration": 4146000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.\n    at Context.eval (cypress/support/step_definitions/roomPage.js:10:43)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 21000000
             }
           },
           {
@@ -43,7 +42,8 @@
             "line": 10,
             "name": "configures a sort by \"lowest price\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1820000000
             }
           },
           {
@@ -52,7 +52,8 @@
             "line": 11,
             "name": "chooses a currency: \"USD\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3113000000
             }
           },
           {
@@ -61,7 +62,8 @@
             "line": 12,
             "name": "selects a room modality",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 509000000
             }
           },
           {
@@ -70,7 +72,8 @@
             "line": 13,
             "name": "user continues to tariff",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 854000000
             }
           },
           {
@@ -79,7 +82,8 @@
             "line": 14,
             "name": "the user is redirected to tariff page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1602000000
             }
           }
         ]
@@ -99,26 +103,27 @@
             "name": "an user on the room selection page with at least one result",
             "result": {
               "status": "passed",
-              "duration": 8556000000
+              "duration": 5049000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 9,
-            "name": "an user that sets Melia Rewards in \"<setActive>\"",
+            "name": "an user that sets Melia Rewards in \"false\"",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.\n    at Context.eval (cypress/support/step_definitions/roomPage.js:10:43)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 848000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "configures a sort by \"hisghest price\"",
+            "name": "configures a sort by \"highest price\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2176000000
             }
           },
           {
@@ -127,7 +132,8 @@
             "line": 11,
             "name": "chooses a currency: \"EUR\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1953000000
             }
           },
           {
@@ -136,7 +142,8 @@
             "line": 12,
             "name": "selects a room modality",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 330000000
             }
           },
           {
@@ -145,7 +152,8 @@
             "line": 13,
             "name": "user continues to tariff",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 511000000
             }
           },
           {
@@ -154,7 +162,8 @@
             "line": 14,
             "name": "the user is redirected to tariff page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 654000000
             }
           }
         ]
@@ -174,35 +183,37 @@
             "name": "an user on the room selection page with at least one result",
             "result": {
               "status": "passed",
-              "duration": 9274000000
+              "duration": 5907000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 9,
-            "name": "an user that sets Melia Rewards in \"<setActive>\"",
+            "name": "an user that sets Melia Rewards in \"true\"",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.\n    at Context.eval (cypress/support/step_definitions/roomPage.js:10:43)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 15000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "configures a sort by \"sortMethod\"",
+            "name": "configures a sort by \"lowest price\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1179000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "chooses a currency: \"JPY\"",
+            "name": "chooses a currency: \"GBP\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2602000000
             }
           },
           {
@@ -211,7 +222,8 @@
             "line": 12,
             "name": "selects a room modality",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 382000000
             }
           },
           {
@@ -220,7 +232,8 @@
             "line": 13,
             "name": "user continues to tariff",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 579000000
             }
           },
           {
@@ -229,7 +242,8 @@
             "line": 14,
             "name": "the user is redirected to tariff page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 959000000
             }
           }
         ]

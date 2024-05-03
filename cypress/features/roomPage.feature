@@ -15,7 +15,7 @@ Scenario Outline: The user uses filters to choose a room and a modality, and con
 
 Examples: 
 
-| isActive | sortMethod     | currency |
-| true     | lowest price   | USD      |
-| false    | hisghest price | EUR      |
-| true     | sortMethod     | JPY      |
+| setActive | sortMethod    | currency |
+| true      | lowest price  | USD      |
+| false     | highest price | EUR      |
+| true      | lowest price  | GBP      |
