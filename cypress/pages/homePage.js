@@ -21,14 +21,13 @@ class homePage {
 
     selectCity (city) {
         this.elements.labelSearch().should('be.visible').click()
-        this.elements.inputSearch().type(city).then(() => {
-            this.elements.firstOptionSearch().should('be.visible').click()
-        })
-    }
+        this.elements.inputSearch().should('be.visible').type(city)
+        this.elements.firstOptionSearch().should('be.visible').click()
+        }
 
     selectDate () {
-        this.elements.dateTwo().should('be.visible').contains('20').click({force:true})
-        this.elements.dateTwo().should('be.visible').contains('25').click({force:true})
+        this.elements.dateTwo().should('be.visible').contains('10').click()
+        this.elements.dateTwo().should('be.visible').contains('15').click()
     }
 
     clickSearchButton () {
@@ -40,17 +39,27 @@ class homePage {
     }
 
     emptyCity (city) {
-        this.elements.labelSearch().should('be.visible').click()
+        this.elements.labelSearch().should('be.visible').click() 
         if (city !== "") {
             this.elements.inputSearch().clear().type(city).then(() => {
-                this.elements.firstOptionSearch().should('be.visible').click()
+                this.elements.firstOptionSearch().should('be.visible').click({force:true})
             })
         }
     }  
+
+    selectInvalidCity (city) {
+        this.elements.labelSearch().should('be.visible').click()
+        this.elements.inputSearch().should('be.visible').type(city)
+    }
     
     emptyCityError () {
         this.elements.errorCityEmpty().contains('Introduce un hotel')
     }
+
+    invalidCityError () {
+        this.elements.errorCityInvalid().should('be.visible').contains('Lo sentimos, nuestro sistema no reconoce este nombre')
+    }
 }
+
 
 module.exports = new homePage(); 

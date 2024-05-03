@@ -8,7 +8,7 @@ Given('user visit hotel page', () => {
             'user-agent': 'axios/0.27.2'
         }
     })
-    homePage.acceptCookies();
+    homePage.acceptCookies()
 })
 
 When('user enter valid search criteria', () => {
@@ -18,6 +18,7 @@ When('user enter valid search criteria', () => {
 })
 
 Then('a list of hotels is shown', () => {
+    cy.wait(5000)
     homePage.hotelList()
 })
 
@@ -29,3 +30,12 @@ When('user does not enter search criteria', () => {
 Then('error message is displayed', () => {
     homePage.emptyCityError()
 }) 
+
+When ('user enter invalid city', () => {
+    homePage.selectInvalidCity(cities[3])
+    homePage.clickSearchButton()
+})
+
+Then('second error message is displayed', () => {
+    homePage.invalidCityError()
+})
