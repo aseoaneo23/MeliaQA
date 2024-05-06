@@ -23,7 +23,7 @@ class RoomPage {
                 'user-agent': 'axios/0.27.2'
             }
         })
-        homePage.acceptCookies();//TODO: Cambiar cuando se integre el step de homePage
+        homePage.clickOn(searchPage.ACCEPT_COOKIES);//TODO: Cambiar cuando se integre el step de homePage
     }
 
     clickOnRewardsFilter = (setActive) => {

@@ -9,10 +9,9 @@ export const searchPage = {
     BUTTON_SEARCH : '.submit___3burc > .c-button___2XZmD',
     HOTEL_FOUND : ':nth-child(1) > .c-result-cover___3mtgg > .media-wrapper___1oer_ > .c-swiper___1RTdv > .slides___32sgt > .slides-wrapper___2R5Sk > .active___2ZI2Y > .overlay___2cmrI',
     ERROR_CITY_EMPTY : '.content___10xxT',
-    ERROR_CITY_INVALID : '.text___O5noN'
+    ERROR_CITY_INVALID : '.text___O5noN',
+    ERROR_DATE_EMPTY : '.c-notification___23xB1'
 }
-
-export let cities = ["Madrid", "Barcelona", "A Coruña", "Granja", ""]
 
 export const roomDataPage = {
     A_HOTEL_URL : 'https://www.melia.com/es/booking?search=%7B%22destination%22%3A%7B%22city%22%3A%22Madrid%22%2C%22country%22%3A%22Espa%C3%B1a%22%2C%22hotel%22%3A%22Palacio%20de%20los%20Duques%20Gran%20Meli%C3%A1%22%2C%22id%22%3A%222810%22%7D%2C%22occupation%22%3A%5B%7B%22adults%22%3A2%7D%5D%2C%22calendar%22%3A%7B%22dates%22%3A%5B1718841600000%2C1719273600000%5D%2C%22locale%22%3A%22es%22%7D%2C%22hotels%22%3A%5B%222810%22%5D%2C%22promoCode%22%3A%7B%7D%2C%22blockId%22%3Anull%7D' ,
@@ -26,3 +25,16 @@ export const roomDataPage = {
     ROOM_MODALITY_BTN: '#C2T > .options___2Ov7N > :nth-child(1) > label',
     CONTINUE_TO_TARIFF_BTN: ':nth-child(1) > .c-result-cover___3mtgg > .info-wrapper___34DSy > .content-wrapper___2lIR9 > .info___1cfzX > .actions-wrapper___3x3wS > .actions-background-wrapper___2zGgS > .b-wrapper___3CcRc > :nth-child(1) > :nth-child(1) > :nth-child(2) > .c-button___2XZmD'
 } 
+
+export let cities = {
+    Madrid: {name: "Madrid"},
+    Barcelona: {name: "Barcelona"},
+    ACoruña: {name: "A Coruña"},
+    Invalid: {name: "Granja"},
+}
+
+export let madridString = cities.Madrid.name
+export let barcelonaString = cities.Barcelona.name
+export let aCoruna = cities.ACoruña.name
+export let invalid = cities.Invalid.name
+
