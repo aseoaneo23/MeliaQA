@@ -13,4 +13,14 @@ export const searchPage = {
     ERROR_DATE_EMPTY : '.c-notification___23xB1'
 }
 
-export let cities = ["Madrid", "Barcelona", "A Coruña", "Granja", ""]
+export let cities = {
+    Madrid: {name: "Madrid"},
+    Barcelona: {name: "Barcelona"},
+    ACoruña: {name: "A Coruña"},
+    Invalid: {name: "Granja"},
+}
+
+export let madridString = cities.Madrid.name
+export let barcelonaString = cities.Barcelona.name
+export let aCoruna = cities.ACoruña.name
+export let invalid = cities.Invalid.name

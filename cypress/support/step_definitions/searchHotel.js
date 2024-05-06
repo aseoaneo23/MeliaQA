@@ -1,30 +1,21 @@
-import { searchPage, cities } from "../../constants"
+import { searchPage, madridString, invalid, } from "../../constants"
 import homePage from "../../pages/homePage"
 
 Given('user visit hotel page', () => {
-    cy.visit(searchPage.MELIA_PAGE, {
-        headers: {
-            'accept': 'application/json, text/plain, */*',
-            'user-agent': 'axios/0.27.2'
-        }
-    })
-    homePage.acceptCookies()
+    homePage.visitPage(searchPage.MELIA_PAGE)
 })
 
 When('user enter valid search criteria', () => {
-    homePage.selectCity(cities[0])
-    homePage.selectDate()
-    homePage.clickSearchButton()
+    homePage.selectCityAndDate(madridString)
+    homePage.clickOn(searchPage.BUTTON_SEARCH)
 })
 
 Then('a list of hotels is shown', () => {
-    cy.wait(5000)
     homePage.hotelList()
 })
 
 When('user does not enter search criteria', () => {
-    homePage.emptyCity(cities[4])
-    homePage.clickSearchButton()
+    homePage.clickOn(searchPage.BUTTON_SEARCH)
 })
 
 Then('error message is displayed', () => {
@@ -32,8 +23,8 @@ Then('error message is displayed', () => {
 }) 
 
 When ('user enter invalid city', () => {
-    homePage.selectInvalidCity(cities[3])
-    homePage.clickSearchButton()
+    homePage.selectInvalidCity (invalid)
+    homePage.clickOn(searchPage.BUTTON_SEARCH)
 })
 
 Then('second error message is displayed', () => {
@@ -41,8 +32,8 @@ Then('second error message is displayed', () => {
 })
 
 When('user enter whitout date', () => {
-    homePage.selectCity(cities[0])
-    homePage.clickSearchButton()
+    homePage.selectCity(madridString)
+    homePage.clickOn(searchPage.BUTTON_SEARCH)
 })
 
 Then('third error message is displayed', () => {

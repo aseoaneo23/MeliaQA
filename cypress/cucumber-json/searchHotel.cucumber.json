@@ -23,7 +23,7 @@
             "name": "user visit hotel page",
             "result": {
               "status": "passed",
-              "duration": 3567000000
+              "duration": 3738000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "user enter valid search criteria",
             "result": {
               "status": "passed",
-              "duration": 1949000000
+              "duration": 1850000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "a list of hotels is shown",
             "result": {
               "status": "passed",
-              "duration": 5163000000
+              "duration": 11084000000
             }
           }
         ]
@@ -63,7 +63,7 @@
             "name": "user visit hotel page",
             "result": {
               "status": "passed",
-              "duration": 3818000000
+              "duration": 3055000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "user does not enter search criteria",
             "result": {
               "status": "passed",
-              "duration": 1513000000
+              "duration": 270000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "error message is displayed",
             "result": {
               "status": "passed",
-              "duration": 37000000
+              "duration": 36000000
             }
           }
         ]
@@ -103,7 +103,7 @@
             "name": "user visit hotel page",
             "result": {
               "status": "passed",
-              "duration": 2868000000
+              "duration": 3419000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "user enter invalid city",
             "result": {
               "status": "passed",
-              "duration": 1371000000
+              "duration": 1343000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "second error message is displayed",
             "result": {
               "status": "passed",
-              "duration": 52000000
+              "duration": 54000000
             }
           }
         ]
@@ -143,7 +143,7 @@
             "name": "user visit hotel page",
             "result": {
               "status": "passed",
-              "duration": 3119000000
+              "duration": 2770000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "user enter whitout date",
             "result": {
               "status": "passed",
-              "duration": 1996000000
+              "duration": 1851000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "third error message is displayed",
             "result": {
               "status": "passed",
-              "duration": 65000000
+              "duration": 60000000
             }
           }
         ]
