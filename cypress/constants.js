@@ -15,24 +15,30 @@ export const searchPage = {
 export let cities = ["Madrid", "Barcelona", "A Coruña", "Granja", ""]
 
 export const userDataPage  = {
-    EMAIL_INPUT : "//input[contains(@name,'email')]",
-    NACIONALITY_SELECT : "//select[contains(@name,'nationality')]",
-    NAME_INPUT : "//input[@name='name']",
-    AP1_INPUT : "//input[contains(@name,'surname1')]",
-    AP2_INPUT : "//input[contains(@name,'surname2')]",
-    NIF_INPUT : "//input[contains(@name,'nif')]",
-    COUNTRY_SELECT : "//select[contains(@name,'country')]",
-    POPULATION_INPUT : "//input[contains(@name,'city')]",
-    ZIPCODE_INPUT : "//input[contains(@name,'postcode')]",
-    PROVINCE_SELECT : "//input[contains(@name,'postcode')]",
-    ADDRESS_INPUT : "//input[contains(@name,'address')]",
-    TELFPREFIX_SELECT : "//span[contains(@class,'select-wrapper___2t9AO')]",
-    TELF_INPUT : "//input[contains(@name,'phoneNumber')]",
-    CHECKBOX_REWARDS : "//label[contains(@for,'rewards')]",
-    CHECKBOX_CONDITIONS : "//label[contains(@for,'checkboxConditions')]",
-    SUBMIT_BUTTON : "//button[@class='c-button___2XZmD'][contains(.,'Continuar')]",
+    EMAIL_INPUT : "#email",
+    NACIONALITY_SELECT : "#nationality",
+    NAME_INPUT : "#name",
+    AP1_INPUT : "#surname1",
+    AP2_INPUT : "#surname2",
+    NIF_INPUT : "#nif",
+    COUNTRY_SELECT : "#country",
+    POPULATION_INPUT : "#city",
+    ZIPCODE_INPUT : "#postcode",
+    PROVINCE_SELECT : "#province", 
+    ADDRESS_INPUT : "#address",
+    TELF_INPUT : "#phoneNumber",
+    CHECKBOX_REWARDS : "#rewards",
+    CHECKBOX_CONDITIONS : "#checkboxConditions",
+    RESERVE_BUTTON : "//button[@class='c-button___2XZmD'][contains(.,'Buscar')]",
+    TARIFF_BUTTON : ":nth-child(1) > .c-result-cover___3mtgg > .info-wrapper___34DSy > .content-wrapper___2lIR9 > .info___1cfzX > .actions-wrapper___3x3wS > .actions-background-wrapper___2zGgS > .b-wrapper___3CcRc > :nth-child(1) > :nth-child(1) > :nth-child(2) > .c-button___2XZmD",
+    SUBMIT_BUTTON : "//button[contains(@type,'submit')]",
     ERROR_INPUT : "//p[@class='error___3B9Tw'][contains(., 'errortext')]",
-    USERDATA_URL : "/checkout/step-3"
+    USERDATA_URL : "/checkout/step-3",
+    TARIFF_URL : "/checkout/step-2"
+}
+
+export const commonPage = {
+    REJECTCOOKIES : "#didomi-notice-agree-button"
 }
 
 export const paymentDataPage = {

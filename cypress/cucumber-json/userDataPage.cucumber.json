@@ -11,9 +11,14 @@
       {
         "id": "user-data-fill-page;successfull-inputs-with-valid-data",
         "keyword": "Scenario",
-        "line": 8,
+        "line": 9,
         "name": "Successfull inputs with valid data",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 8
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -23,14 +28,14 @@
             "name": "A user who is on the hotel booking page",
             "result": {
               "status": "failed",
-              "duration": 109000000,
-              "error_message": "TypeError: cy.xpath is not a function\n    at UserDataPage.getElement (cypress/pages/userDataPage.js:15:29)\n    at UserDataPage.clickButton (cypress/pages/userDataPage.js:49:13)\n    at Context.eval (cypress/support/step_definitions/userDataPage.js:9:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
+              "duration": 104000000,
+              "error_message": "ReferenceError: clickButton is not defined\n    at Context.eval (cypress/support/step_definitions/userDataPage.js:10:4)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 9,
+            "line": 10,
             "name": "the user entered valid credentials",
             "result": {
               "status": "skipped"
@@ -39,7 +44,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
+            "line": 11,
             "name": "the user checked the reward option and the privacy policy",
             "result": {
               "status": "skipped"
@@ -48,54 +53,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 11,
-            "name": "the user clicks on the access button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
             "line": 12,
-            "name": "the user is redirected to the PaymentPage.",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "user-data-fill-page;invalid-data-entered-by-the-user",
-        "keyword": "Scenario",
-        "line": 22,
-        "name": "Invalid data entered by the user",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "A user who is on the hotel booking page",
-            "result": {
-              "status": "failed",
-              "error_message": "TypeError: cy.xpath is not a function\n    at UserDataPage.getElement (cypress/pages/userDataPage.js:15:29)\n    at UserDataPage.clickButton (cypress/pages/userDataPage.js:49:13)\n    at Context.eval (cypress/support/step_definitions/userDataPage.js:9:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 16,
-            "name": "the user entered invalid format \"email\"",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 17,
             "name": "the user clicks on the access button",
             "result": {
               "status": "skipped"
@@ -104,8 +62,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
-            "name": "invalid inputs fields show a error: \"El formato del correo electrónico no es válido.\"",
+            "line": 13,
+            "name": "the user is redirected to the PaymentPage.",
             "result": {
               "status": "skipped"
             }
@@ -127,14 +85,14 @@
             "name": "A user who is on the hotel booking page",
             "result": {
               "status": "failed",
-              "error_message": "TypeError: cy.xpath is not a function\n    at UserDataPage.getElement (cypress/pages/userDataPage.js:15:29)\n    at UserDataPage.clickButton (cypress/pages/userDataPage.js:49:13)\n    at Context.eval (cypress/support/step_definitions/userDataPage.js:9:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
+              "error_message": "ReferenceError: clickButton is not defined\n    at Context.eval (cypress/support/step_definitions/userDataPage.js:10:4)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 16,
-            "name": "the user entered invalid format \"zipcode\"",
+            "line": 17,
+            "name": "the user entered invalid format \"email\"",
             "result": {
               "status": "skipped"
             }
@@ -142,7 +100,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 17,
+            "line": 18,
             "name": "the user clicks on the access button",
             "result": {
               "status": "skipped"
@@ -151,8 +109,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
-            "name": "invalid inputs fields show a error: \"El formato del código postal no es válido.\"",
+            "line": 19,
+            "name": "invalid inputs fields show a error: \"El formato del correo electrónico no es válido.\"",
             "result": {
               "status": "skipped"
             }
@@ -174,14 +132,14 @@
             "name": "A user who is on the hotel booking page",
             "result": {
               "status": "failed",
-              "error_message": "TypeError: cy.xpath is not a function\n    at UserDataPage.getElement (cypress/pages/userDataPage.js:15:29)\n    at UserDataPage.clickButton (cypress/pages/userDataPage.js:49:13)\n    at Context.eval (cypress/support/step_definitions/userDataPage.js:9:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
+              "error_message": "ReferenceError: clickButton is not defined\n    at Context.eval (cypress/support/step_definitions/userDataPage.js:10:4)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 16,
-            "name": "the user entered invalid format \"number\"",
+            "line": 17,
+            "name": "the user entered invalid format \"zipcode\"",
             "result": {
               "status": "skipped"
             }
@@ -189,7 +147,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 17,
+            "line": 18,
             "name": "the user clicks on the access button",
             "result": {
               "status": "skipped"
@@ -198,8 +156,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
-            "name": "invalid inputs fields show a error: \"Número de teléfono incorrecto\"",
+            "line": 19,
+            "name": "invalid inputs fields show a error: \"El formato del código postal no es válido.\"",
             "result": {
               "status": "skipped"
             }
@@ -221,14 +179,14 @@
             "name": "A user who is on the hotel booking page",
             "result": {
               "status": "failed",
-              "error_message": "TypeError: cy.xpath is not a function\n    at UserDataPage.getElement (cypress/pages/userDataPage.js:15:29)\n    at UserDataPage.clickButton (cypress/pages/userDataPage.js:49:13)\n    at Context.eval (cypress/support/step_definitions/userDataPage.js:9:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
+              "error_message": "ReferenceError: clickButton is not defined\n    at Context.eval (cypress/support/step_definitions/userDataPage.js:10:4)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 16,
-            "name": "the user entered invalid format \"nif\"",
+            "line": 17,
+            "name": "the user entered invalid format \"number\"",
             "result": {
               "status": "skipped"
             }
@@ -236,7 +194,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 17,
+            "line": 18,
             "name": "the user clicks on the access button",
             "result": {
               "status": "skipped"
@@ -245,8 +203,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
-            "name": "invalid inputs fields show a error: \"El formato del documento de identidad no es válido.\"",
+            "line": 19,
+            "name": "invalid inputs fields show a error: \"Número de teléfono incorrecto\"",
             "result": {
               "status": "skipped"
             }
@@ -268,14 +226,14 @@
             "name": "A user who is on the hotel booking page",
             "result": {
               "status": "failed",
-              "error_message": "TypeError: cy.xpath is not a function\n    at UserDataPage.getElement (cypress/pages/userDataPage.js:15:29)\n    at UserDataPage.clickButton (cypress/pages/userDataPage.js:49:13)\n    at Context.eval (cypress/support/step_definitions/userDataPage.js:9:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
+              "error_message": "ReferenceError: clickButton is not defined\n    at Context.eval (cypress/support/step_definitions/userDataPage.js:10:4)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 16,
-            "name": "the user entered invalid format \"empty\"",
+            "line": 17,
+            "name": "the user entered invalid format \"nif\"",
             "result": {
               "status": "skipped"
             }
@@ -283,7 +241,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 17,
+            "line": 18,
             "name": "the user clicks on the access button",
             "result": {
               "status": "skipped"
@@ -292,7 +250,54 @@
           {
             "arguments": [],
             "keyword": "Then ",
+            "line": 19,
+            "name": "invalid inputs fields show a error: \"El formato del documento de identidad no es válido.\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-data-fill-page;invalid-data-entered-by-the-user",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Invalid data entered by the user",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A user who is on the hotel booking page",
+            "result": {
+              "status": "failed",
+              "error_message": "ReferenceError: clickButton is not defined\n    at Context.eval (cypress/support/step_definitions/userDataPage.js:10:4)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "the user entered invalid format \"empty\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
             "line": 18,
+            "name": "the user clicks on the access button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
             "name": "invalid inputs fields show a error: \"Campo requerido\"",
             "result": {
               "status": "skipped"
