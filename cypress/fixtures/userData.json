@@ -1,0 +1,26 @@
+{
+    "validUser": {
+        "EMAIL": "jorge@gmail.com",
+        "NACIONALITY": "ESPAÑA",
+        "NAME": "Jorge",
+        "AP1": "Fernández",
+        "AP2": "Gonzalez",
+        "NIF": "34239787E",
+        "ZIPCODE": "15000",
+        "PROVINCE": "LA CORUÑA",
+        "PHONEPREFIX": "+34",
+        "PHONE": "633448944"
+    },
+    "invalidUser": {
+        "EMAIL": "jorgegmailcom",
+        "NACIONALITY": "ESPAÑA",
+        "NAME": "Jorge",
+        "AP1": "Fernández",
+        "AP2": "Gonzalez",
+        "NIF": "3423978232A7E",
+        "ZIPCODE": "ABCSDE",
+        "PROVINCE": "LA CORUÑA",
+        "PHONEPREFIX": "+34",
+        "PHONE": "A4568776452"
+    }
+}

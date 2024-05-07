@@ -13,6 +13,44 @@ export const searchPage = {
     ERROR_DATE_EMPTY : '.c-notification___23xB1'
 }
 
+export const userDataPage  = {
+    EMAIL_INPUT : "#email",
+    NACIONALITY_SELECT : "#nationality",
+    NAME_INPUT : "#name",
+    AP1_INPUT : "#surname1",
+    AP2_INPUT : "#surname2",
+    NIF_INPUT : "#nif",
+    COUNTRY_SELECT : "#country",
+    POPULATION_INPUT : "#city",
+    ZIPCODE_INPUT : "#postcode",
+    PROVINCE_SELECT : "#province", 
+    ADDRESS_INPUT : "#address",
+    TELF_INPUT : "#phoneNumber",
+    CHECKBOX_REWARDS : "#rewards",
+    CHECKBOX_CONDITIONS : "#checkboxConditions",
+    RESERVE_BUTTON : "//button[@class='c-button___2XZmD'][contains(.,'Buscar')]",
+    TARIFF_BUTTON : ":nth-child(1) > .c-result-cover___3mtgg > .info-wrapper___34DSy > .content-wrapper___2lIR9 > .info___1cfzX > .actions-wrapper___3x3wS > .actions-background-wrapper___2zGgS > .b-wrapper___3CcRc > :nth-child(1) > :nth-child(1) > :nth-child(2) > .c-button___2XZmD",
+    SUBMIT_BUTTON : "//button[contains(@type,'submit')]",
+    ERROR_INPUT : "//p[@class='error___3B9Tw'][contains(., 'errortext')]",
+    USERDATA_URL : "/checkout/step-3",
+    TARIFF_URL : "/checkout/step-2"
+}
+
+export const commonPage = {
+    REJECTCOOKIES : "#didomi-notice-agree-button"
+}
+
+export const paymentDataPage = {
+    PAYPAL_TAB :  "//li[@class='list-metodos-pago'][contains(.,'Paypal')]",
+    CARDNAME_INPUT : "//input[contains(@name,'cardholder')]",
+    CARD_INPUT : "//input[@id='pan']",
+    MONTHDATE_SELECT : "//select[contains(@name,'month')]",
+    YEARDATE_SELECT : "//select[contains(@name,'year')]",
+    CVV_INPUT : "//input[contains(@name,'cvv')]",
+    SUBMIT_BUTTON : "//button[@type='button'][contains(.,'Confirmar reserva')]",
+    PAYMENTDATA_URL : "https://www.meliapayments.com/payments/form"
+
+}
 export const tariffPage = {
     BOOK_THIS_HOTEL_BTN : ':nth-child(1) > .c-result-cover___3mtgg > .info-wrapper___34DSy > .content-wrapper___2lIR9 > .info___1cfzX > .actions-wrapper___3x3wS > .b-wrapper___3CcRc > :nth-child(1) > :nth-child(1) > :nth-child(2) > .c-button___2XZmD',
     SELECT_A_ROOM_BTN : ':nth-child(1) > .c-result-cover___3mtgg > .info-wrapper___34DSy > .content-wrapper___2lIR9 > .info___1cfzX > .actions-wrapper___3x3wS > .actions-background-wrapper___2zGgS > .b-wrapper___3CcRc > :nth-child(1) > :nth-child(1) > :nth-child(2) > .c-button___2XZmD',
@@ -46,5 +84,4 @@ export let madridString = cities.Madrid.name
 export let barcelonaString = cities.Barcelona.name
 export let aCoruna = cities.ACoruña.name
 export let invalid = cities.Invalid.name
-
 
