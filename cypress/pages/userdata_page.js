@@ -9,6 +9,7 @@ class UserDataPage {
                 'user-agent': 'axios/0.27.2'
             }
         });
+        this.clickButton(commonPage.REJECTCOOKIES);
     };
     checkRedirection = expectedUrl => cy.url().should('include', expectedUrl);
     getElement = element => cy.get(element).first().should('be.visible');
@@ -43,17 +44,14 @@ class UserDataPage {
     }
     searchAndBookHotel(){
         this.visitPage('/');
-        this.clickButton(commonPage.REJECTCOOKIES);
         this.search()
         this.getElement(userDataPage.TARIFF_BUTTON).scrollIntoView();
         this.clickButton(userDataPage.TARIFF_BUTTON);
         this.checkRedirection(userDataPage.TARIFF_URL);
         this.getXpathElement(userDataPage.SUBMIT_BUTTON).click();
     }
-    enableCheckBoxes(...checkboxes) {
-        checkboxes.forEach(checkbox => {
-            this.getElement(checkbox).check()
-        });
+    enableCheckBox(checkbox) {
+        this.getElement(checkbox).click({force:true})
     }
     checkError(error){
         const regex = /errortext/g

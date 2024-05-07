@@ -10,10 +10,10 @@ Given('the user entered valid data with {string} as mail, {string} as nacionalit
     DataPage.enterCredentials(email, nacionality, name, ap1, ap2, nif, province, zipcode, phone)
 });
 Given('the user checked the reward checkbox', () => {
-    DataPage.getElement(userDataPage.CHECKBOX_REWARDS).click({force:true})
+    DataPage.enableCheckBox(userDataPage.CHECKBOX_REWARDS)
 });
 Given('the user checked the privacy policy checkbox', () => {
-    DataPage.getElement(userDataPage.CHECKBOX_CONDITIONS).click({force:true})
+    DataPage.enableCheckBox(userDataPage.CHECKBOX_CONDITIONS)
 });
 
 

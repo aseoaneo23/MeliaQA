@@ -1,5 +1,5 @@
-Feature: User Data Fill Page
-    A page where the user fill the required inputs to book a room on the wesite.
+Feature: Personal Information Page
+    A page where the user fill their personal information.
 
 
 Background:
