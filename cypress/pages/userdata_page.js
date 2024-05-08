@@ -39,8 +39,8 @@ class UserDataPage {
         this.getElement(userDataPage.POPULATION_INPUT).type(province);
         this.getElement(userDataPage.ZIPCODE_INPUT).type(zipcode);
         this.getElement(userDataPage.PROVINCE_SELECT).select(province);
-        this.getElement(userDataPage.ADDRESS_INPUT).type(province);
         this.getElement(userDataPage.TELF_INPUT).type(phone);
+        this.getElement(userDataPage.ADDRESS_INPUT).type(province);
     }
     searchAndBookHotel(){
         this.visitPage('/');
@@ -56,6 +56,7 @@ class UserDataPage {
     checkError(error){
         const regex = /errortext/g
         userDataPage.ERROR_INPUT = (userDataPage.ERROR_INPUT).replace(regex, error)
+        console.log(userDataPage.ERROR_INPUT)
         this.getXpathElement(userDataPage.ERROR_INPUT).should('contain', error)
     }
 
