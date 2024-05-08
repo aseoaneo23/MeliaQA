@@ -1,4 +1,4 @@
-import { tariffPage, searchPage, cities } from "../constants"
+import { tariffPage, searchPage, madridString } from "../constants"
 import homePage from './homePage'
 require('cypress-xpath')
 
@@ -15,16 +15,9 @@ elemments = {
 }
 
 visitTariffPage = () => {
-    cy.visit(searchPage.MELIA_PAGE, {
-        headers: {
-            'accept': 'application/json, text/plain, */*',
-            'user-agent': 'axios/0.27.2'
-        }
-    })
-    homePage.acceptCookies();
-    homePage.selectCity(cities[0])
-    homePage.selectDate()
-    homePage.clickSearchButton()
+    homePage.visitPage(searchPage.MELIA_PAGE)
+    homePage.selectCityAndDate(madridString)
+    homePage.clickOn(searchPage.BUTTON_SEARCH)
     homePage.hotelList()
     this.clickOnHotel()
     this.clickOnRoom()

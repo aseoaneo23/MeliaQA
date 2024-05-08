@@ -11,7 +11,6 @@ Scenario: the tariff selection is completed
     When the user continues 
     Then the user is redirected to user data page
 
-
 Scenario: the tariff selection isn't completed because user returns to room page
     Given an user on the tariff page
     When user decides to return 
