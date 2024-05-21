@@ -37,7 +37,7 @@ export const userDataPage  = {
 }
 
 export const commonPage = {
-    REJECTCOOKIES : "#didomi-notice-agree-button"
+    REJECTCOOKIES : "#didomi-notice-disagree-button"
 }
 
 export const paymentDataPage = {
