@@ -3,7 +3,7 @@ import RoomPage from '../../pages/room_selection_page'
 
 
 Given('an user on the room selection page with at least one result', () =>{
-     RoomPage.searchHotel()
+    RoomPage.searchHotel()
 })
 
 Given('an user that sets Melia Rewards in {string}', (setActive) =>{

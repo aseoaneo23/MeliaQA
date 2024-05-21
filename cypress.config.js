@@ -11,6 +11,7 @@ module.exports = defineConfig({
     chromeWebSecurity: false,
     viewportWidth: 1920,
     viewportHeight: 1080,
-    defaultCommandTimeout: 1000000, 
+    defaultCommandTimeout: 1000000,
+    modifyObstructiveCode: true
   },
 });

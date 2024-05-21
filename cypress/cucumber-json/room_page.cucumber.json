@@ -23,7 +23,7 @@
             "name": "an user on the room selection page with at least one result",
             "result": {
               "status": "passed",
-              "duration": 5773000000
+              "duration": 5502000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "an user that sets Melia Rewards in \"true\"",
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 71000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "configures a sort by \"lowest price\"",
             "result": {
               "status": "passed",
-              "duration": 1177000000
+              "duration": 2252000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "chooses a currency: \"USD\"",
             "result": {
               "status": "passed",
-              "duration": 2594000000
+              "duration": 3736000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "selects a room modality",
             "result": {
               "status": "passed",
-              "duration": 382000000
+              "duration": 535000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "user continues to tariff",
             "result": {
               "status": "passed",
-              "duration": 461000000
+              "duration": 618000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "the user is redirected to tariff page",
             "result": {
               "status": "passed",
-              "duration": 993000000
+              "duration": 649000000
             }
           }
         ]
@@ -103,7 +103,7 @@
             "name": "an user on the room selection page with at least one result",
             "result": {
               "status": "passed",
-              "duration": 6117000000
+              "duration": 7030000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "an user that sets Melia Rewards in \"false\"",
             "result": {
               "status": "passed",
-              "duration": 669000000
+              "duration": 2523000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "configures a sort by \"highest price\"",
             "result": {
               "status": "passed",
-              "duration": 1796000000
+              "duration": 1226000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "chooses a currency: \"EUR\"",
             "result": {
               "status": "passed",
-              "duration": 2089000000
+              "duration": 1554000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "user continues to tariff",
             "result": {
               "status": "passed",
-              "duration": 501000000
+              "duration": 380000000
             }
           },
           {
@@ -163,7 +163,7 @@
             "name": "the user is redirected to tariff page",
             "result": {
               "status": "passed",
-              "duration": 544000000
+              "duration": 831000000
             }
           }
         ]
@@ -183,7 +183,7 @@
             "name": "an user on the room selection page with at least one result",
             "result": {
               "status": "passed",
-              "duration": 6060000000
+              "duration": 5857000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "an user that sets Melia Rewards in \"true\"",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 27000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "configures a sort by \"lowest price\"",
             "result": {
               "status": "passed",
-              "duration": 1118000000
+              "duration": 2521000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "chooses a currency: \"GBP\"",
             "result": {
               "status": "passed",
-              "duration": 1602000000
+              "duration": 4278000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "selects a room modality",
             "result": {
               "status": "passed",
-              "duration": 322000000
+              "duration": 443000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "user continues to tariff",
             "result": {
               "status": "passed",
-              "duration": 651000000
+              "duration": 569000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "the user is redirected to tariff page",
             "result": {
               "status": "passed",
-              "duration": 728000000
+              "duration": 1136000000
             }
           }
         ]

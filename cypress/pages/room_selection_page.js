@@ -17,12 +17,7 @@ class RoomPage {
     }
 
     searchHotel = () => {
-        cy.visit(roomDataPage.A_HOTEL_URL, {
-            headers: {
-                'accept': 'application/json, text/plain, */*',
-                'user-agent': 'axios/0.27.2'
-            }
-        })
+        cy.visit(roomDataPage.A_HOTEL_URL)
         homePage.clickOn(searchPage.ACCEPT_COOKIES);//TODO: Cambiar cuando se integre el step de homePage
     }
 

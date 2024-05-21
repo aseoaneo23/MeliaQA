@@ -1,19 +1,24 @@
 [
   {
-    "description": "    A page where the user fill the required inputs to book a room on the wesite.",
+    "description": "    A page where the user fill their personal information.",
     "keyword": "Feature",
-    "name": "User Data Fill Page",
+    "name": "Personal Information Page",
     "line": 1,
-    "id": "user-data-fill-page",
+    "id": "personal-information-page",
     "tags": [],
     "uri": "userdate_page.feature",
     "elements": [
       {
-        "id": "user-data-fill-page;successfull-inputs-with-valid-data",
+        "id": "personal-information-page;successfull-inputs-with-valid-data",
         "keyword": "Scenario",
         "line": 17,
         "name": "Successfull inputs with valid data",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 8
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -23,8 +28,8 @@
             "name": "A user who is on the hotel booking page",
             "result": {
               "status": "failed",
-              "duration": 753000000,
-              "error_message": "ReferenceError: commonPage is not defined\n    at UserDataPage.searchAndBookHotel (cypress/pages/userdata_page.js:46:25)\n    at Context.eval (cypress/support/step_definitions/userdata_page.js:7:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
+              "duration": 434000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.melia.com/es/\n\nThe response we received from your web server was:\n\n  > 403: Forbidden\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at __webpack_modules__</__WEBPACK_DEFAULT_EXPORT__/visit/visit/ (https://www.melia.com/__cypress/runner/cypress_runner.js:131464:76)\n    at visitFailedByErr (https://www.melia.com/__cypress/runner/cypress_runner.js:130878:12)\n    at __webpack_modules__</__WEBPACK_DEFAULT_EXPORT__/visit/visit (https://www.melia.com/__cypress/runner/cypress_runner.js:131447:29)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (https://www.melia.com/__cypress/runner/cypress_runner.js:1519:31)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise (https://www.melia.com/__cypress/runner/cypress_runner.js:1576:18)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise0 (https://www.melia.com/__cypress/runner/cypress_runner.js:1621:10)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromises (https://www.melia.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://www.melia.com/__cypress/runner/cypress_runner.js:2407:12)\nFrom previous event:\n    at captureStackTrace (https://www.melia.com/__cypress/runner/cypress_runner.js:3919:23)\n    at CapturedTrace (https://www.melia.com/__cypress/runner/cypress_runner.js:3811:22)\n    at longStackTracesCaptureStackTrace (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at __webpack_modules__</module.exports/Promise.prototype._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at __webpack_modules__</module.exports/Promise.prototype._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at __webpack_modules__</module.exports/Promise.prototype.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163586:46)\n    at action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at __webpack_modules__</patchRunnableRun/Runnable.prototype.run (https://www.melia.com/__cypress/runner/cypress_runner.js:146174:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155959:10)\n    at __webpack_modules__</Runner.prototype.hook (https://www.melia.com/__cypress/runner/cypress_runner.js:156003:9)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146514:27)\nFrom Your Spec Code:\n    at visitPage (cypress/pages/userdata_page.js:6:11)\n    at searchAndBookHotel (cypress/pages/userdata_page.js:46:13)\n    at [10] (cypress/support/step_definitions/userdata_page.js:7:13)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (https://www.melia.com/__cypress/runner/cypress_runner.js:118799:20)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.try (https://www.melia.com/__cypress/runner/cypress_runner.js:4315:29)\n    at thenFn (https://www.melia.com/__cypress/runner/cypress_runner.js:118810:60)\n    at then (https://www.melia.com/__cypress/runner/cypress_runner.js:119061:21)\n    at wrapped (https://www.melia.com/__cypress/runner/cypress_runner.js:138814:19)\n    at __webpack_modules__</runCommand (https://www.melia.com/__cypress/runner/cypress_runner.js:144728:15)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (https://www.melia.com/__cypress/runner/cypress_runner.js:1519:31)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise (https://www.melia.com/__cypress/runner/cypress_runner.js:1576:18)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseCtx (https://www.melia.com/__cypress/runner/cypress_runner.js:1613:10)\n    at _drainQueueStep (https://www.melia.com/__cypress/runner/cypress_runner.js:2411:12)\n    at _drainQueue (https://www.melia.com/__cypress/runner/cypress_runner.js:2400:24)\n    at __webpack_modules__</Async.prototype._drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2416:16)\n    at __webpack_modules__</Async/this.drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2286:14)"
             }
           },
           {
@@ -75,16 +80,11 @@
         ]
       },
       {
-        "id": "user-data-fill-page;invalid-data-entered-by-the-user",
+        "id": "personal-information-page;invalid-data-entered-by-the-user",
         "keyword": "Scenario",
-        "line": 26,
+        "line": 25,
         "name": "Invalid data entered by the user",
-        "tags": [
-          {
-            "name": "@focus",
-            "line": 19
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -94,13 +94,13 @@
             "name": "A user who is on the hotel booking page",
             "result": {
               "status": "failed",
-              "error_message": "ReferenceError: commonPage is not defined\n    at UserDataPage.searchAndBookHotel (cypress/pages/userdata_page.js:46:25)\n    at Context.eval (cypress/support/step_definitions/userdata_page.js:7:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.melia.com/es/\n\nThe response we received from your web server was:\n\n  > 403: Forbidden\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at __webpack_modules__</__WEBPACK_DEFAULT_EXPORT__/visit/visit/ (https://www.melia.com/__cypress/runner/cypress_runner.js:131464:76)\n    at visitFailedByErr (https://www.melia.com/__cypress/runner/cypress_runner.js:130878:12)\n    at __webpack_modules__</__WEBPACK_DEFAULT_EXPORT__/visit/visit (https://www.melia.com/__cypress/runner/cypress_runner.js:131447:29)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (https://www.melia.com/__cypress/runner/cypress_runner.js:1519:31)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise (https://www.melia.com/__cypress/runner/cypress_runner.js:1576:18)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise0 (https://www.melia.com/__cypress/runner/cypress_runner.js:1621:10)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromises (https://www.melia.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://www.melia.com/__cypress/runner/cypress_runner.js:2407:12)\nFrom previous event:\n    at captureStackTrace (https://www.melia.com/__cypress/runner/cypress_runner.js:3919:23)\n    at CapturedTrace (https://www.melia.com/__cypress/runner/cypress_runner.js:3811:22)\n    at longStackTracesCaptureStackTrace (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at __webpack_modules__</module.exports/Promise.prototype._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at __webpack_modules__</module.exports/Promise.prototype._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at __webpack_modules__</module.exports/Promise.prototype.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163586:46)\n    at action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at __webpack_modules__</patchRunnableRun/Runnable.prototype.run (https://www.melia.com/__cypress/runner/cypress_runner.js:146174:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155959:10)\n    at __webpack_modules__</Runner.prototype.hook (https://www.melia.com/__cypress/runner/cypress_runner.js:156003:9)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146514:27)\nFrom Your Spec Code:\n    at visitPage (cypress/pages/userdata_page.js:6:11)\n    at searchAndBookHotel (cypress/pages/userdata_page.js:46:13)\n    at [10] (cypress/support/step_definitions/userdata_page.js:7:13)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (https://www.melia.com/__cypress/runner/cypress_runner.js:118799:20)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.try (https://www.melia.com/__cypress/runner/cypress_runner.js:4315:29)\n    at thenFn (https://www.melia.com/__cypress/runner/cypress_runner.js:118810:60)\n    at then (https://www.melia.com/__cypress/runner/cypress_runner.js:119061:21)\n    at wrapped (https://www.melia.com/__cypress/runner/cypress_runner.js:138814:19)\n    at __webpack_modules__</runCommand (https://www.melia.com/__cypress/runner/cypress_runner.js:144728:15)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (https://www.melia.com/__cypress/runner/cypress_runner.js:1519:31)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise (https://www.melia.com/__cypress/runner/cypress_runner.js:1576:18)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseCtx (https://www.melia.com/__cypress/runner/cypress_runner.js:1613:10)\n    at _drainQueueStep (https://www.melia.com/__cypress/runner/cypress_runner.js:2411:12)\n    at _drainQueue (https://www.melia.com/__cypress/runner/cypress_runner.js:2400:24)\n    at __webpack_modules__</Async.prototype._drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2416:16)\n    at __webpack_modules__</Async/this.drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2286:14)"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 21,
+            "line": 20,
             "name": "the user entered invalid data with \"jorgegmailcom\" as mail, \"ESPAÑA\" as nacionality , \"Jorge\" as name, \"Fernández\" as surname, \"Gonzalez\" as 2o surname, \"4920478E\" as NIF, \"15001\" as ZipCode, \"644556985\" as Telf. Number, \"LA CORUÑA\" as province",
             "result": {
               "status": "skipped"
@@ -109,7 +109,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 22,
+            "line": 21,
             "name": "invalid inputs fields show a error: \"El formato del correo electrónico no es válido.\"",
             "result": {
               "status": "skipped"
@@ -118,16 +118,11 @@
         ]
       },
       {
-        "id": "user-data-fill-page;invalid-data-entered-by-the-user",
+        "id": "personal-information-page;invalid-data-entered-by-the-user",
         "keyword": "Scenario",
-        "line": 27,
+        "line": 26,
         "name": "Invalid data entered by the user",
-        "tags": [
-          {
-            "name": "@focus",
-            "line": 19
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -137,13 +132,13 @@
             "name": "A user who is on the hotel booking page",
             "result": {
               "status": "failed",
-              "error_message": "ReferenceError: commonPage is not defined\n    at UserDataPage.searchAndBookHotel (cypress/pages/userdata_page.js:46:25)\n    at Context.eval (cypress/support/step_definitions/userdata_page.js:7:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.melia.com/es/\n\nThe response we received from your web server was:\n\n  > 403: Forbidden\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at __webpack_modules__</__WEBPACK_DEFAULT_EXPORT__/visit/visit/ (https://www.melia.com/__cypress/runner/cypress_runner.js:131464:76)\n    at visitFailedByErr (https://www.melia.com/__cypress/runner/cypress_runner.js:130878:12)\n    at __webpack_modules__</__WEBPACK_DEFAULT_EXPORT__/visit/visit (https://www.melia.com/__cypress/runner/cypress_runner.js:131447:29)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (https://www.melia.com/__cypress/runner/cypress_runner.js:1519:31)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise (https://www.melia.com/__cypress/runner/cypress_runner.js:1576:18)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise0 (https://www.melia.com/__cypress/runner/cypress_runner.js:1621:10)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromises (https://www.melia.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://www.melia.com/__cypress/runner/cypress_runner.js:2407:12)\nFrom previous event:\n    at captureStackTrace (https://www.melia.com/__cypress/runner/cypress_runner.js:3919:23)\n    at CapturedTrace (https://www.melia.com/__cypress/runner/cypress_runner.js:3811:22)\n    at longStackTracesCaptureStackTrace (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at __webpack_modules__</module.exports/Promise.prototype._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at __webpack_modules__</module.exports/Promise.prototype._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at __webpack_modules__</module.exports/Promise.prototype.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163586:46)\n    at action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at __webpack_modules__</patchRunnableRun/Runnable.prototype.run (https://www.melia.com/__cypress/runner/cypress_runner.js:146174:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155959:10)\n    at __webpack_modules__</Runner.prototype.hook (https://www.melia.com/__cypress/runner/cypress_runner.js:156003:9)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146514:27)\nFrom Your Spec Code:\n    at visitPage (cypress/pages/userdata_page.js:6:11)\n    at searchAndBookHotel (cypress/pages/userdata_page.js:46:13)\n    at [10] (cypress/support/step_definitions/userdata_page.js:7:13)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (https://www.melia.com/__cypress/runner/cypress_runner.js:118799:20)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.try (https://www.melia.com/__cypress/runner/cypress_runner.js:4315:29)\n    at thenFn (https://www.melia.com/__cypress/runner/cypress_runner.js:118810:60)\n    at then (https://www.melia.com/__cypress/runner/cypress_runner.js:119061:21)\n    at wrapped (https://www.melia.com/__cypress/runner/cypress_runner.js:138814:19)\n    at __webpack_modules__</runCommand (https://www.melia.com/__cypress/runner/cypress_runner.js:144728:15)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (https://www.melia.com/__cypress/runner/cypress_runner.js:1519:31)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise (https://www.melia.com/__cypress/runner/cypress_runner.js:1576:18)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseCtx (https://www.melia.com/__cypress/runner/cypress_runner.js:1613:10)\n    at _drainQueueStep (https://www.melia.com/__cypress/runner/cypress_runner.js:2411:12)\n    at _drainQueue (https://www.melia.com/__cypress/runner/cypress_runner.js:2400:24)\n    at __webpack_modules__</Async.prototype._drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2416:16)\n    at __webpack_modules__</Async/this.drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2286:14)"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 21,
+            "line": 20,
             "name": "the user entered invalid data with \"jorge@gmail.com\" as mail, \"ESPAÑA\" as nacionality , \"Jorge\" as name, \"Fernández\" as surname, \"Gonzalez\" as 2o surname, \"4920478E\" as NIF, \"15001\" as ZipCode, \"A4568776452\" as Telf. Number, \"LA CORUÑA\" as province",
             "result": {
               "status": "skipped"
@@ -152,7 +147,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 22,
+            "line": 21,
             "name": "invalid inputs fields show a error: \"Número de teléfono incorrecto\"",
             "result": {
               "status": "skipped"
@@ -161,16 +156,11 @@
         ]
       },
       {
-        "id": "user-data-fill-page;invalid-data-entered-by-the-user",
+        "id": "personal-information-page;invalid-data-entered-by-the-user",
         "keyword": "Scenario",
-        "line": 28,
+        "line": 27,
         "name": "Invalid data entered by the user",
-        "tags": [
-          {
-            "name": "@focus",
-            "line": 19
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -180,13 +170,13 @@
             "name": "A user who is on the hotel booking page",
             "result": {
               "status": "failed",
-              "error_message": "ReferenceError: commonPage is not defined\n    at UserDataPage.searchAndBookHotel (cypress/pages/userdata_page.js:46:25)\n    at Context.eval (cypress/support/step_definitions/userdata_page.js:7:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.melia.com/es/\n\nThe response we received from your web server was:\n\n  > 403: Forbidden\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at __webpack_modules__</__WEBPACK_DEFAULT_EXPORT__/visit/visit/ (https://www.melia.com/__cypress/runner/cypress_runner.js:131464:76)\n    at visitFailedByErr (https://www.melia.com/__cypress/runner/cypress_runner.js:130878:12)\n    at __webpack_modules__</__WEBPACK_DEFAULT_EXPORT__/visit/visit (https://www.melia.com/__cypress/runner/cypress_runner.js:131447:29)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (https://www.melia.com/__cypress/runner/cypress_runner.js:1519:31)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise (https://www.melia.com/__cypress/runner/cypress_runner.js:1576:18)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise0 (https://www.melia.com/__cypress/runner/cypress_runner.js:1621:10)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromises (https://www.melia.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://www.melia.com/__cypress/runner/cypress_runner.js:2407:12)\nFrom previous event:\n    at captureStackTrace (https://www.melia.com/__cypress/runner/cypress_runner.js:3919:23)\n    at CapturedTrace (https://www.melia.com/__cypress/runner/cypress_runner.js:3811:22)\n    at longStackTracesCaptureStackTrace (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at __webpack_modules__</module.exports/Promise.prototype._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at __webpack_modules__</module.exports/Promise.prototype._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at __webpack_modules__</module.exports/Promise.prototype.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163586:46)\n    at action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at __webpack_modules__</patchRunnableRun/Runnable.prototype.run (https://www.melia.com/__cypress/runner/cypress_runner.js:146174:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155959:10)\n    at __webpack_modules__</Runner.prototype.hook (https://www.melia.com/__cypress/runner/cypress_runner.js:156003:9)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146514:27)\nFrom Your Spec Code:\n    at visitPage (cypress/pages/userdata_page.js:6:11)\n    at searchAndBookHotel (cypress/pages/userdata_page.js:46:13)\n    at [10] (cypress/support/step_definitions/userdata_page.js:7:13)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (https://www.melia.com/__cypress/runner/cypress_runner.js:118799:20)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.try (https://www.melia.com/__cypress/runner/cypress_runner.js:4315:29)\n    at thenFn (https://www.melia.com/__cypress/runner/cypress_runner.js:118810:60)\n    at then (https://www.melia.com/__cypress/runner/cypress_runner.js:119061:21)\n    at wrapped (https://www.melia.com/__cypress/runner/cypress_runner.js:138814:19)\n    at __webpack_modules__</runCommand (https://www.melia.com/__cypress/runner/cypress_runner.js:144728:15)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (https://www.melia.com/__cypress/runner/cypress_runner.js:1519:31)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise (https://www.melia.com/__cypress/runner/cypress_runner.js:1576:18)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseCtx (https://www.melia.com/__cypress/runner/cypress_runner.js:1613:10)\n    at _drainQueueStep (https://www.melia.com/__cypress/runner/cypress_runner.js:2411:12)\n    at _drainQueue (https://www.melia.com/__cypress/runner/cypress_runner.js:2400:24)\n    at __webpack_modules__</Async.prototype._drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2416:16)\n    at __webpack_modules__</Async/this.drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2286:14)"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 21,
+            "line": 20,
             "name": "the user entered invalid data with \"jorge@gmail.com\" as mail, \"ESPAÑA\" as nacionality , \"Jorge\" as name, \"Fernández\" as surname, \"Gonzalez\" as 2o surname, \"3423978232A7E\" as NIF, \"15001\" as ZipCode, \"644556985\" as Telf. Number, \"LA CORUÑA\" as province",
             "result": {
               "status": "skipped"
@@ -195,7 +185,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 22,
+            "line": 21,
             "name": "invalid inputs fields show a error: \"El formato del documento de identidad no es válido.\"",
             "result": {
               "status": "skipped"
@@ -204,16 +194,11 @@
         ]
       },
       {
-        "id": "user-data-fill-page;invalid-data-entered-by-the-user",
+        "id": "personal-information-page;invalid-data-entered-by-the-user",
         "keyword": "Scenario",
-        "line": 29,
+        "line": 28,
         "name": "Invalid data entered by the user",
-        "tags": [
-          {
-            "name": "@focus",
-            "line": 19
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -223,13 +208,13 @@
             "name": "A user who is on the hotel booking page",
             "result": {
               "status": "failed",
-              "error_message": "ReferenceError: commonPage is not defined\n    at UserDataPage.searchAndBookHotel (cypress/pages/userdata_page.js:46:25)\n    at Context.eval (cypress/support/step_definitions/userdata_page.js:7:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.melia.com/es/\n\nThe response we received from your web server was:\n\n  > 403: Forbidden\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at __webpack_modules__</__WEBPACK_DEFAULT_EXPORT__/visit/visit/ (https://www.melia.com/__cypress/runner/cypress_runner.js:131464:76)\n    at visitFailedByErr (https://www.melia.com/__cypress/runner/cypress_runner.js:130878:12)\n    at __webpack_modules__</__WEBPACK_DEFAULT_EXPORT__/visit/visit (https://www.melia.com/__cypress/runner/cypress_runner.js:131447:29)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (https://www.melia.com/__cypress/runner/cypress_runner.js:1519:31)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise (https://www.melia.com/__cypress/runner/cypress_runner.js:1576:18)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise0 (https://www.melia.com/__cypress/runner/cypress_runner.js:1621:10)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromises (https://www.melia.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://www.melia.com/__cypress/runner/cypress_runner.js:2407:12)\nFrom previous event:\n    at captureStackTrace (https://www.melia.com/__cypress/runner/cypress_runner.js:3919:23)\n    at CapturedTrace (https://www.melia.com/__cypress/runner/cypress_runner.js:3811:22)\n    at longStackTracesCaptureStackTrace (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at __webpack_modules__</module.exports/Promise.prototype._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at __webpack_modules__</module.exports/Promise.prototype._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at __webpack_modules__</module.exports/Promise.prototype.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163586:46)\n    at action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at __webpack_modules__</patchRunnableRun/Runnable.prototype.run (https://www.melia.com/__cypress/runner/cypress_runner.js:146174:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155959:10)\n    at __webpack_modules__</Runner.prototype.hook (https://www.melia.com/__cypress/runner/cypress_runner.js:156003:9)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146514:27)\nFrom Your Spec Code:\n    at visitPage (cypress/pages/userdata_page.js:6:11)\n    at searchAndBookHotel (cypress/pages/userdata_page.js:46:13)\n    at [10] (cypress/support/step_definitions/userdata_page.js:7:13)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (https://www.melia.com/__cypress/runner/cypress_runner.js:118799:20)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.try (https://www.melia.com/__cypress/runner/cypress_runner.js:4315:29)\n    at thenFn (https://www.melia.com/__cypress/runner/cypress_runner.js:118810:60)\n    at then (https://www.melia.com/__cypress/runner/cypress_runner.js:119061:21)\n    at wrapped (https://www.melia.com/__cypress/runner/cypress_runner.js:138814:19)\n    at __webpack_modules__</runCommand (https://www.melia.com/__cypress/runner/cypress_runner.js:144728:15)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (https://www.melia.com/__cypress/runner/cypress_runner.js:1519:31)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise (https://www.melia.com/__cypress/runner/cypress_runner.js:1576:18)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseCtx (https://www.melia.com/__cypress/runner/cypress_runner.js:1613:10)\n    at _drainQueueStep (https://www.melia.com/__cypress/runner/cypress_runner.js:2411:12)\n    at _drainQueue (https://www.melia.com/__cypress/runner/cypress_runner.js:2400:24)\n    at __webpack_modules__</Async.prototype._drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2416:16)\n    at __webpack_modules__</Async/this.drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2286:14)"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 21,
+            "line": 20,
             "name": "the user entered invalid data with \"empty\" as mail, \"ESPAÑA\" as nacionality , \"Jorge\" as name, \"Fernández\" as surname, \"Gonzalez\" as 2o surname, \"3423978232A7E\" as NIF, \"empty\" as ZipCode, \"empty\" as Telf. Number, \"LA CORUÑA\" as province",
             "result": {
               "status": "skipped"
@@ -238,7 +223,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 22,
+            "line": 21,
             "name": "invalid inputs fields show a error: \"Campo requerido\"",
             "result": {
               "status": "skipped"
@@ -247,16 +232,11 @@
         ]
       },
       {
-        "id": "user-data-fill-page;invalid-data-entered-by-the-user",
+        "id": "personal-information-page;invalid-data-entered-by-the-user",
         "keyword": "Scenario",
-        "line": 30,
+        "line": 29,
         "name": "Invalid data entered by the user",
-        "tags": [
-          {
-            "name": "@focus",
-            "line": 19
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -266,13 +246,13 @@
             "name": "A user who is on the hotel booking page",
             "result": {
               "status": "failed",
-              "error_message": "ReferenceError: commonPage is not defined\n    at UserDataPage.searchAndBookHotel (cypress/pages/userdata_page.js:46:25)\n    at Context.eval (cypress/support/step_definitions/userdata_page.js:7:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163183:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:145771:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155556:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:155600:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146111:27)"
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.melia.com/es/\n\nThe response we received from your web server was:\n\n  > 403: Forbidden\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at __webpack_modules__</__WEBPACK_DEFAULT_EXPORT__/visit/visit/ (https://www.melia.com/__cypress/runner/cypress_runner.js:131464:76)\n    at visitFailedByErr (https://www.melia.com/__cypress/runner/cypress_runner.js:130878:12)\n    at __webpack_modules__</__WEBPACK_DEFAULT_EXPORT__/visit/visit (https://www.melia.com/__cypress/runner/cypress_runner.js:131447:29)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (https://www.melia.com/__cypress/runner/cypress_runner.js:1519:31)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise (https://www.melia.com/__cypress/runner/cypress_runner.js:1576:18)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise0 (https://www.melia.com/__cypress/runner/cypress_runner.js:1621:10)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromises (https://www.melia.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://www.melia.com/__cypress/runner/cypress_runner.js:2407:12)\nFrom previous event:\n    at captureStackTrace (https://www.melia.com/__cypress/runner/cypress_runner.js:3919:23)\n    at CapturedTrace (https://www.melia.com/__cypress/runner/cypress_runner.js:3811:22)\n    at longStackTracesCaptureStackTrace (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at __webpack_modules__</module.exports/Promise.prototype._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at __webpack_modules__</module.exports/Promise.prototype._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at __webpack_modules__</module.exports/Promise.prototype.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163586:46)\n    at action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at __webpack_modules__</patchRunnableRun/Runnable.prototype.run (https://www.melia.com/__cypress/runner/cypress_runner.js:146174:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155959:10)\n    at __webpack_modules__</Runner.prototype.hook (https://www.melia.com/__cypress/runner/cypress_runner.js:156003:9)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146514:27)\nFrom Your Spec Code:\n    at visitPage (cypress/pages/userdata_page.js:6:11)\n    at searchAndBookHotel (cypress/pages/userdata_page.js:46:13)\n    at [10] (cypress/support/step_definitions/userdata_page.js:7:13)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (https://www.melia.com/__cypress/runner/cypress_runner.js:118799:20)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.try (https://www.melia.com/__cypress/runner/cypress_runner.js:4315:29)\n    at thenFn (https://www.melia.com/__cypress/runner/cypress_runner.js:118810:60)\n    at then (https://www.melia.com/__cypress/runner/cypress_runner.js:119061:21)\n    at wrapped (https://www.melia.com/__cypress/runner/cypress_runner.js:138814:19)\n    at __webpack_modules__</runCommand (https://www.melia.com/__cypress/runner/cypress_runner.js:144728:15)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (https://www.melia.com/__cypress/runner/cypress_runner.js:1519:31)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise (https://www.melia.com/__cypress/runner/cypress_runner.js:1576:18)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseCtx (https://www.melia.com/__cypress/runner/cypress_runner.js:1613:10)\n    at _drainQueueStep (https://www.melia.com/__cypress/runner/cypress_runner.js:2411:12)\n    at _drainQueue (https://www.melia.com/__cypress/runner/cypress_runner.js:2400:24)\n    at __webpack_modules__</Async.prototype._drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2416:16)\n    at __webpack_modules__</Async/this.drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2286:14)"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 21,
+            "line": 20,
             "name": "the user entered invalid data with \"jorge@gmailcom\" as mail, \"ESPAÑA\" as nacionality , \"Jorge\" as name, \"Fernández\" as surname, \"Gonzalez\" as 2o surname, \"4920478E\" as NIF, \"ABCSDE\" as ZipCode, \"644556985\" as Telf. Number, \"LA CORUÑA\" as province",
             "result": {
               "status": "skipped"
@@ -281,7 +261,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 22,
+            "line": 21,
             "name": "invalid inputs fields show a error: \"El formato del código postal no es válido.\"",
             "result": {
               "status": "skipped"

@@ -22,7 +22,9 @@
             "line": 6,
             "name": "an user who has selected a room and modality",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "duration": 118000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.melia.com/\n\nThe response we received from your web server was:\n\n  > 403: Forbidden\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:131464:76)\n    at visitFailedByErr (https://www.melia.com/__cypress/runner/cypress_runner.js:130878:12)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:131447:13)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://www.melia.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://www.melia.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://www.melia.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://www.melia.com/__cypress/runner/cypress_runner.js:1697:18)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:2392:25)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163586:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:146174:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155959:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:156003:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146514:27)\nFrom Your Spec Code:\n    at homePage.visitPage (cypress/pages/homePage.js:18:11)\n    at TariffPage.eval [as visitTariffPage] (cypress/pages/tariff_page.js:18:13)\n    at Context.eval (cypress/support/step_definitions/select_tariff.js:5:15)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -66,14 +68,9 @@
       {
         "id": "tariff-selection;the-tariff-selection-isn't-completed-because-user-returns-to-room-page",
         "keyword": "Scenario",
-        "line": 15,
+        "line": 14,
         "name": "the tariff selection isn't completed because user returns to room page",
-        "tags": [
-          {
-            "name": "@focus",
-            "line": 14
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -82,38 +79,35 @@
             "line": 6,
             "name": "an user who has selected a room and modality",
             "result": {
-              "status": "passed",
-              "duration": 17822000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.melia.com/\n\nThe response we received from your web server was:\n\n  > 403: Forbidden\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:131464:76)\n    at visitFailedByErr (https://www.melia.com/__cypress/runner/cypress_runner.js:130878:12)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:131447:13)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://www.melia.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://www.melia.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://www.melia.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://www.melia.com/__cypress/runner/cypress_runner.js:1697:18)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:2392:25)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.melia.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://www.melia.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://www.melia.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://www.melia.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://www.melia.com/__cypress/runner/cypress_runner.js:163586:53)\n    at $Cypress.action (https://www.melia.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://www.melia.com/__cypress/runner/cypress_runner.js:146174:13)\n    at next (https://www.melia.com/__cypress/runner/cypress_runner.js:155959:10)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:156003:5)\n    at timeslice (https://www.melia.com/__cypress/runner/cypress_runner.js:146514:27)\nFrom Your Spec Code:\n    at homePage.visitPage (cypress/pages/homePage.js:18:11)\n    at TariffPage.eval [as visitTariffPage] (cypress/pages/tariff_page.js:18:13)\n    at Context.eval (cypress/support/step_definitions/select_tariff.js:5:15)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 16,
+            "line": 15,
             "name": "an user on the tariff page",
             "result": {
-              "status": "passed",
-              "duration": 3515000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 17,
+            "line": 16,
             "name": "user decides to return",
             "result": {
-              "status": "passed",
-              "duration": 2337000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
+            "line": 17,
             "name": "the user is redirected to room page",
             "result": {
-              "status": "passed",
-              "duration": 83000000
+              "status": "skipped"
             }
           }
         ]

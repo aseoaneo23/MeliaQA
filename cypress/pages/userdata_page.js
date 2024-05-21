@@ -3,12 +3,7 @@ import { userDataPage, paymentDataPage, commonPage, searchPage} from "../constan
 class UserDataPage {
 
     visitPage(url){
-        cy.visit(url, {
-            headers: {
-                'accept': 'application/json, text/plain, */*',
-                'user-agent': 'axios/0.27.2'
-            }
-        });
+        cy.visit(url);
         this.clickButton(commonPage.REJECTCOOKIES);
     };
     checkRedirection = expectedUrl => cy.url().should('include', expectedUrl);
@@ -21,8 +16,8 @@ class UserDataPage {
         this.getElement(searchPage.INPUT_SEARCH).click().type('coruña').then(() => {
             this.getElement(searchPage.FIRST_OPTION_SEARCH).click();
         })
-        this.getElement(searchPage.FIRST_CALENDAR).contains('20').click();
-        this.getElement(searchPage.FIRST_CALENDAR).contains('22').click();
+        this.getElement(searchPage.FIRST_CALENDAR).contains('23').click();
+        this.getElement(searchPage.FIRST_CALENDAR).contains('28').click();
         this.clickButton(searchPage.BUTTON_SEARCH)
         this.getXpathElement(userDataPage.RESERVE_BUTTON).click({force:true})
 
