@@ -22,7 +22,8 @@ When('the user clicks on the access button', () => {
 });
 
 Then('is redirected to the payment page', () => {
-    DataPage.checkRedirection(paymentDataPage.PAYMENTDATA_URL);
+    cy.wait(1000);
+    DataPage.checkRedirectionPage(paymentDataPage.PAYMENTDATA_URL);
 });
 
 

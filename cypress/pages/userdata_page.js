@@ -7,6 +7,12 @@ class UserDataPage {
         this.clickButton(commonPage.REJECTCOOKIES);
     };
     checkRedirection = expectedUrl => cy.url().should('include', expectedUrl);
+    checkRedirectionPage(expectedUrl){
+        cy.origin('https://www.meliapayments.com/', { args: { expectedUrl } }, ({ expectedUrl }) => {
+            cy.url().should('contain', expectedUrl);
+            console.log(cy.url())
+        })}
+        
     getElement = element => cy.get(element).first().should('be.visible');
     getXpathElement = element => cy.xpath(element).first().should('be.visible');
 
