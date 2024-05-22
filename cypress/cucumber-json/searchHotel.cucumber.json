@@ -22,8 +22,9 @@
             "line": 6,
             "name": "user visit hotel page",
             "result": {
-              "status": "passed",
-              "duration": 5384000000
+              "status": "failed",
+              "duration": 368000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.melia.com/\n\nThe response we received from your web server was:\n\n  > 403: Forbidden\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:131464:76)\n    at visitFailedByErr (https://www.melia.com/__cypress/runner/cypress_runner.js:130878:12)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:131447:13)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://www.melia.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://www.melia.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://www.melia.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://www.melia.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://www.melia.com/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://www.melia.com/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at homePage.visitPage (cypress/pages/homePage.js:18:11)\n    at Context.eval (cypress/support/step_definitions/searchHotel.js:5:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -32,8 +33,7 @@
             "line": 9,
             "name": "user enter valid search criteria",
             "result": {
-              "status": "passed",
-              "duration": 6967000000
+              "status": "skipped"
             }
           },
           {
@@ -42,8 +42,7 @@
             "line": 10,
             "name": "a list of hotels is shown",
             "result": {
-              "status": "passed",
-              "duration": 5565000000
+              "status": "skipped"
             }
           }
         ]
@@ -62,8 +61,8 @@
             "line": 6,
             "name": "user visit hotel page",
             "result": {
-              "status": "passed",
-              "duration": 5870000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.melia.com/\n\nThe response we received from your web server was:\n\n  > 403: Forbidden\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:131464:76)\n    at visitFailedByErr (https://www.melia.com/__cypress/runner/cypress_runner.js:130878:12)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:131447:13)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://www.melia.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://www.melia.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://www.melia.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://www.melia.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://www.melia.com/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://www.melia.com/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at homePage.visitPage (cypress/pages/homePage.js:18:11)\n    at Context.eval (cypress/support/step_definitions/searchHotel.js:5:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -72,8 +71,7 @@
             "line": 13,
             "name": "user does not enter search criteria",
             "result": {
-              "status": "passed",
-              "duration": 1908000000
+              "status": "skipped"
             }
           },
           {
@@ -82,8 +80,7 @@
             "line": 14,
             "name": "error message is displayed",
             "result": {
-              "status": "passed",
-              "duration": 110000000
+              "status": "skipped"
             }
           }
         ]
@@ -102,8 +99,8 @@
             "line": 6,
             "name": "user visit hotel page",
             "result": {
-              "status": "passed",
-              "duration": 6382000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.melia.com/\n\nThe response we received from your web server was:\n\n  > 403: Forbidden\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:131464:76)\n    at visitFailedByErr (https://www.melia.com/__cypress/runner/cypress_runner.js:130878:12)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:131447:13)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://www.melia.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://www.melia.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://www.melia.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://www.melia.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://www.melia.com/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://www.melia.com/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at homePage.visitPage (cypress/pages/homePage.js:18:11)\n    at Context.eval (cypress/support/step_definitions/searchHotel.js:5:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -112,8 +109,7 @@
             "line": 17,
             "name": "user enter invalid city",
             "result": {
-              "status": "passed",
-              "duration": 3555000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +118,7 @@
             "line": 18,
             "name": "second error message is displayed",
             "result": {
-              "status": "passed",
-              "duration": 1255000000
+              "status": "skipped"
             }
           }
         ]
@@ -142,8 +137,8 @@
             "line": 6,
             "name": "user visit hotel page",
             "result": {
-              "status": "passed",
-              "duration": 5567000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.melia.com/\n\nThe response we received from your web server was:\n\n  > 403: Forbidden\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:131464:76)\n    at visitFailedByErr (https://www.melia.com/__cypress/runner/cypress_runner.js:130878:12)\n    at <unknown> (https://www.melia.com/__cypress/runner/cypress_runner.js:131447:13)\n    at tryCatcher (https://www.melia.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://www.melia.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://www.melia.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://www.melia.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://www.melia.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://www.melia.com/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://www.melia.com/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://www.melia.com/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at homePage.visitPage (cypress/pages/homePage.js:18:11)\n    at Context.eval (cypress/support/step_definitions/searchHotel.js:5:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -152,8 +147,7 @@
             "line": 21,
             "name": "user enter whitout date",
             "result": {
-              "status": "passed",
-              "duration": 4918000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +156,7 @@
             "line": 22,
             "name": "third error message is displayed",
             "result": {
-              "status": "passed",
-              "duration": 153000000
+              "status": "skipped"
             }
           }
         ]
