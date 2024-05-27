@@ -8,7 +8,7 @@ elemments = {
     verifyRoomPageUrl : () => cy.url().should('contain', 'booking' ),
     getSelectRoomBtn : () => cy.get(tariffPage.SELECT_A_ROOM_BTN).should('be.visible'),
     verifyTariffPageUrl : () => cy.url().should('contain', 'checkout/step-2' ),
-    getTariffButton : () => cy.xpath(tariffPage.TARIFF_SELECTION_BTN).should('be.visible'),
+    getTariffButton : () => cy.get(tariffPage.TARIFF_SELECTION_BTN).should('be.visible'),
     getContinueButton : () => cy.xpath(tariffPage.CONTINUE_ON_CHECKOUT_BTN).should('be.visible'),
     getReturnButton : () => cy.xpath(tariffPage.RETURN_TO_ROOM_BTN).should('be.visible'),
     verifyDataPage : () => cy.url().should('contain', 'checkout/step-3')
@@ -21,8 +21,6 @@ visitTariffPage = () => {
     homePage.hotelList()
     this.clickOnHotel()
     this.clickOnRoom()
-
-
 }
 
 clickOnHotel = () => this.elemments.getSelectHotelBtn().click()
@@ -34,7 +32,7 @@ clickOnRoom = () => this.elemments.getSelectRoomBtn().click()
 
 verifyTariffPage = () => this.elemments.verifyTariffPageUrl()
 
-selectATariff = () => this.elemments.getTariffButton().click()
+selectATariff = () => this.elemments.getTariffButton().check()
 
 continueWithSelectedTariff = () =>{
     cy.wait(1500)
