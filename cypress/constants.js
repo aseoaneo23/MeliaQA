@@ -33,7 +33,8 @@ export const userDataPage  = {
     SUBMIT_BUTTON : "//button[contains(@type,'submit')]",
     ERROR_INPUT : "//p[@class='error___3B9Tw'][contains(., 'errortext')]",
     USERDATA_URL : "/checkout/step-3",
-    TARIFF_URL : "/checkout/step-2"
+    TARIFF_URL : "/checkout/step-2",
+    MELIA_PAY : "MF1" 
 }
 
 export const commonPage = {

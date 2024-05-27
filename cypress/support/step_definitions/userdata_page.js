@@ -6,8 +6,8 @@ const DataPage = new UserDataPage();
 Given("A user who is on the hotel booking page", () => {
     DataPage.searchAndBookHotel();
 }); 
-Given('the user entered valid data with {string} as mail, {string} as nacionality , {string} as name, {string} as surname, {string} as 2o surname, {string} as NIF, {string} as ZipCode, {string} as Telf. Number, {string} as province', (email, nacionality, name, ap1, ap2, nif, zipcode, phone, province) => {                
-    DataPage.enterCredentials(email, nacionality, name, ap1, ap2, nif, province, zipcode, phone)
+Given('the user entered valid data with {string} as mail, {string} as nacionality , {string} as name, {string} as surname, {string} as 2o surname, {string} as NIF, {string} as Telf. Number', (email, nacionality, name, ap1, ap2, nif, phone) => {                
+    DataPage.enterCredentials(email, nacionality, name, ap1, ap2, nif, phone)
 });
 Given('the user checked the reward checkbox', () => {
     DataPage.enableCheckBox(userDataPage.CHECKBOX_REWARDS)
@@ -27,10 +27,10 @@ Then('is redirected to the payment page', () => {
 });
 
 
-When('the user entered invalid data with {string} as mail, {string} as nacionality , {string} as name, {string} as surname, {string} as 2o surname, {string} as NIF, {string} as ZipCode, {string} as Telf. Number, {string} as province', (email, nacionality, name, ap1, ap2, nif, zipcode, phone, province) => {                
-    DataPage.enterCredentials(email, nacionality, name, ap1, ap2, nif, province, zipcode, phone)
+When('the user entered invalid data with {string} as mail, {string} as nacionality , {string} as name, {string} as surname, {string} as 2o surname, {string} as NIF, {string} as Telf. Number', (email, nacionality, name, ap1, ap2, nif, phone) => {                
+    DataPage.enterCredentials(email, nacionality, name, ap1, ap2, nif, phone)
 });
 
-Then('invalid inputs fields show a error: {string}', (err) => {
-    DataPage.checkError(err);
+Then('invalid inputs fields show: {string} is displayed', function (error) {
+    DataPage.checkError(error, userDataPage.ERROR_INPUT);
 });
