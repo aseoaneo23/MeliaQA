@@ -29,3 +29,14 @@ Cypress.Commands.add('visitGoogle', () =>
   cy.visit('https://www.google.com/')
 
 )
+
+Cypress.Commands.overwrite('visit', (originalFn, url, options) => {
+  const newOptions = {
+    ...options,
+    headers: {
+      ...(options ? options.headers : {}),
+      'Sec-Fetch-Mode': 'cors' // Agrega este encabezado para el modo CORS
+    }
+  }
+  return originalFn(url, newOptions)
+})

@@ -55,7 +55,7 @@ export const paymentDataPage = {
 export const tariffPage = {
     BOOK_THIS_HOTEL_BTN : ':nth-child(1) > .c-result-cover___3mtgg > .info-wrapper___34DSy > .content-wrapper___2lIR9 > .info___1cfzX > .actions-wrapper___3x3wS > .b-wrapper___3CcRc > :nth-child(1) > :nth-child(1) > :nth-child(2) > .c-button___2XZmD',
     SELECT_A_ROOM_BTN : ':nth-child(1) > .c-result-cover___3mtgg > .info-wrapper___34DSy > .content-wrapper___2lIR9 > .info___1cfzX > .actions-wrapper___3x3wS > .actions-background-wrapper___2zGgS > .b-wrapper___3CcRc > :nth-child(1) > :nth-child(1) > :nth-child(2) > .c-button___2XZmD',
-    TARIFF_SELECTION_BTN : '//p[contains(.,"Tarifa")][1]', //TO DO: Revisar al implementar pasos de otras roompage
+    TARIFF_SELECTION_BTN : '#MP1',
     CONTINUE_ON_CHECKOUT_BTN : '//button[@class="c-button___2XZmD"][contains(.,"Continuar")]',
     RETURN_TO_ROOM_BTN : '//button[@class="c-button___2XZmD"][contains(.,"Volver")]',
 
